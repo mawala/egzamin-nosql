@@ -216,7 +216,7 @@ Agregację wykonujemy na kolekcji *questions*
 db.questions.aggregate( [ stage1, stage2, stage3 ] )
 ```
 
-Agregacja ta zajęła nam .
+Agregacja ta zajęła nam 17 minut.
 
 ## Agregacje
 
