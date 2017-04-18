@@ -5,6 +5,10 @@
  - Amelia Błachuciak [(zaliczenie)](https://github.com/erathiel/nosql)
  - Marta Walczak [(zaliczenie)](https://github.com/mawala/projekty-nosql)
  
+Główny projekt znajduje się pod tytułem [Agregacje](#agregacje).
+
+Wcześniej znajduje się opis użytego zbioru danych oraz jego wstępnej obróbki.
+ 
 ## Przedstawienie zbioru danych
 
 Zbiór danych: [Zapytania i tagi ze Stack Overflow](https://github.com/dgrtwo/StackLite) (z dnia 7.04.2017)
@@ -150,7 +154,7 @@ W jego efekcie otrzymamy dokumenty w postaci
 }
 ```
 
- - Etap *stage2* powinien dodawać nowe pole. Jednak, ponieważ dokumenty już zawierają pole o takiej nazwie,
+ - Etap *stage2* ze swej definicji powinien dodawać nowe pole. Jednak, ponieważ dokumenty już zawierają pole o takiej nazwie,
  więc etap ten zamienia istniejące pole *Tags*
  
 ```bash
@@ -162,7 +166,7 @@ stage2 =
 }
 ```
 
-Dzięki temu etapowi otrzymujemy już oczekiwany wygląd dokumentów
+Dzięki temu etapowi otrzymujemy oczekiwany wygląd dokumentów
 
 ```bash
 {
