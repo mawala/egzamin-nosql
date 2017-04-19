@@ -49,7 +49,7 @@ Zbiór podzielony jest na 2 pliki *csv*:
 ```
 
 - Id - identyfikator pytania z pliku questions.csv
- - Tag - dany tag pytania
+- Tag - dany tag pytania
  
 ## Import danych
  
@@ -241,3 +241,14 @@ Mamy kolekcję *stack* z 17 763 486 dokumentami, które mają postać
 }
 ```
 
+| Nazwa pola   | Opis                                                                          | 
+|--------------|-------------------------------------------------------------------------------|
+| \_id         | id nadane przez MongoDB                                                       |
+| Id           | id pytania                                                                    | 
+| CreationDate | data utworzenia pytania                                                       | 
+| ClosedDate   | data zamknięcia pytania lub "NA" w przypadku braku zamknięcia                 | 
+| DeletionDate | data usunięcia pytania lub "NA" w przypadku ciągłego istnienia                | 
+| Score        | wewnętrzny system oceniania użytkowników StackOverflow                        | 
+| OwnerUserId  | id użytkownika, który umieścił dane pytanie lub "NA" w przypadku braku danych | 
+| AnswerCount  | ilość odpowiedzi udzielonych na dane pytanie                                  | 
+| Tags         | tagi pytania                                                                  | 
