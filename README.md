@@ -18,7 +18,6 @@ Zbiór podzielony jest na 2 pliki *csv*:
  1. **Plik questions.csv** posiada 17 763 486 rekordów oraz zajmuje około 890 MB.
 
 ```bash
-> db.questions.find( {"Id": 85}, {"_id": 0} ).pretty()
 {
         "Id" : 85,
         "CreationDate" : "2008-08-01T14:19:52Z",
@@ -41,7 +40,6 @@ Zbiór podzielony jest na 2 pliki *csv*:
  2. **Plik question_tags.csv** posiada 52 224 835 rekordów oraz zajmuje około 871 MB.
 
 ```bash
-> db.question_tags.find( {"Id": 85}, {"_id": 0} )
 { "Id" : 85, "Tag" : "php" }
 { "Id" : 85, "Tag" : "sql" }
 { "Id" : 85, "Tag" : "database" }
@@ -80,7 +78,6 @@ powershell "Measure-Command{mongoimport -d anomalia -c question_tags --type csv 
 Chcemy uzyskać dokumenty postaci
  
 ```bash
-> db.stack.findOne( {"Id": 85} )
 {
         "_id" : ObjectId("58f528a58e05fcfb5031094a"),
         "Id" : 85,
