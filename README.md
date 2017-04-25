@@ -5,9 +5,9 @@
  - Amelia Błachuciak [(zaliczenie)](https://github.com/erathiel/nosql)
  - Marta Walczak [(zaliczenie)](https://github.com/mawala/projekty-nosql)
  
-Główny projekt znajduje się **[na stronie](https://mawala.github.io/egzamin-nosql/)**.
+## Główny projekt znajduje się **[na stronie](https://mawala.github.io/egzamin-nosql/)**.
  
-## Przedstawienie zbioru danych
+### Przedstawienie zbioru danych
 
 Zbiór danych: [Zapytania i tagi ze Stack Overflow](https://github.com/dgrtwo/StackLite) (z dnia 7.04.2017)
  
@@ -47,7 +47,7 @@ Zbiór podzielony jest na 2 pliki *csv*:
 - Id - identyfikator pytania z pliku questions.csv
 - Tag - dany tag pytania
  
-## Import danych
+### Import danych
  
  1. questions.csv
  
@@ -69,7 +69,7 @@ powershell "Measure-Command{mongoimport -d anomalia -c question_tags --type csv 
 |--------------|-----------------|
 | 9,58 min     | 52 224 835      |
 
-## Wstępna obróbka danych
+### Wstępna obróbka danych
  
  W celu wykorzystania możliwości MongoDB dane z obu powyżej opisanych plików zostaną zapisane do jednej kolekcji.
  
