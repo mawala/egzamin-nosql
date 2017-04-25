@@ -5,9 +5,7 @@
  - Amelia Błachuciak [(zaliczenie)](https://github.com/erathiel/nosql)
  - Marta Walczak [(zaliczenie)](https://github.com/mawala/projekty-nosql)
  
-Główny projekt znajduje się pod tytułem [Agregacje](#agregacje).
-
-Wcześniej znajduje się opis użytego zbioru danych oraz jego wstępnej obróbki.
+Główny projekt znajduje się [na stronie](https://mawala.github.io/egzamin-nosql/).
  
 ## Przedstawienie zbioru danych
 
@@ -212,40 +210,3 @@ Agregację wykonujemy na kolekcji *questions*
 ```bash
 db.questions.aggregate( [ stage1, stage2, stage3 ] )
 ```
-
-Agregacja ta zajęła nam 17 minut.
-
-## Agregacje
-
-Mamy kolekcję *stack* z 17 763 486 dokumentami, które mają postać
-
-```bash
-{
-        "_id" : ObjectId("58f683bd5d98cb55b9d0819c"),
-        "Id" : 85,
-        "CreationDate" : "2008-08-01T14:19:52Z",
-        "ClosedDate" : "2015-10-22T13:43:51Z",
-        "DeletionDate" : "NA",
-        "Score" : 89,
-        "OwnerUserId" : 59,
-        "AnswerCount" : 12,
-        "Tags" : [
-                "php",
-                "sql",
-                "database",
-                "flat-file"
-        ]
-}
-```
-
-| Nazwa pola   | Opis                                                                          | 
-|--------------|-------------------------------------------------------------------------------|
-| \_id         | id nadane przez MongoDB                                                       |
-| Id           | id pytania                                                                    | 
-| CreationDate | data utworzenia pytania                                                       | 
-| ClosedDate   | data zamknięcia pytania lub "NA" w przypadku braku zamknięcia                 | 
-| DeletionDate | data usunięcia pytania lub "NA" w przypadku ciągłego istnienia                | 
-| Score        | wewnętrzny system oceniania użytkowników StackOverflow                        | 
-| OwnerUserId  | id użytkownika, który umieścił dane pytanie lub "NA" w przypadku braku danych | 
-| AnswerCount  | ilość odpowiedzi udzielonych na dane pytanie                                  | 
-| Tags         | tagi pytania                                                                  | 
