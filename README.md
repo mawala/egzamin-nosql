@@ -5,7 +5,7 @@
  - Amelia Błachuciak [(zaliczenie)](https://github.com/erathiel/nosql)
  - Marta Walczak [(zaliczenie)](https://github.com/mawala/projekty-nosql)
  
-## Główny projekt znajduje się **[na stronie](https://mawala.github.io/egzamin-nosql/)**.
+## Główny projekt znajduje się **[na stronie](https://mawalca.github.io/egzamin-nosql/)**.
  
 ### Przedstawienie zbioru danych
 
